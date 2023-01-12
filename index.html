@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Book library</title>
+  </head>
+  <body>
+    <div class="header">My library</div>
+    <div class="bookCon" id="bookCon">
+      <button id="addBookBtn">
+        <img src="./Images/Screenshot_2023-01-11_17-28-45.png" />
+      </button>
+    </div>
+    <div class="formBackground" id="formBackground"></div>
+    <form action="" method="get" class="bookForm" id="bookForm">
+      <fieldset>
+        <legend>Add your book</legend>
+        <div class="firstFormDiv">
+          <label for="inputTitle">Title</label>
+          <input type="text" id="inputTitle" name="inputTitle" />
+        </div>
+        <div>
+          <label for="inputAuthor">Author</label>
+          <input type="text" id="inputAuthor" name="inputAuthor" />
+        </div>
+        <div>
+          <label for="inputPages">Pages</label>
+          <input type="number" id="inputPages" name="inputPages" />
+        </div>
+        <div>
+          <label for="readOrInput">I have read the book</label>
+          <input type="checkbox" id="readOrInput" name="readOrInput" />
+        </div>
+      </fieldset>
+      <div id="formTitleLab">Please fill out all sections</div>
+      <input
+        type="button"
+        onclick="createBookToLibrary()"
+        name="createBtn"
+        id="createBtn"
+        value="Create"
+      />
+    </form>
+    <script src="script.js" defer></script>
+  </body>
+</html>
